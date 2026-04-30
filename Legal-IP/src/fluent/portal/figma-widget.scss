@@ -1,0 +1,3973 @@
+/*! tailwindcss v4.2.4 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  .vibe-figma-root, .vibe-figma-root {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-sm: 24rem;
+    --container-lg: 32rem;
+    --container-2xl: 42rem;
+    --container-4xl: 56rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --tracking-tight: -0.025em;
+    --tracking-widest: 0.1em;
+    --leading-relaxed: 1.625;
+    --radius-xs: 0.125rem;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --aspect-video: 16 / 9;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  .vibe-figma-root *, .vibe-figma-root ::after, .vibe-figma-root ::before, .vibe-figma-root ::backdrop, .vibe-figma-root ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  .vibe-figma-root, .vibe-figma-root {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vibe-figma-root hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  .vibe-figma-root abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  .vibe-figma-root h1, .vibe-figma-root h2, .vibe-figma-root h3, .vibe-figma-root h4, .vibe-figma-root h5, .vibe-figma-root h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .vibe-figma-root a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  .vibe-figma-root b, .vibe-figma-root strong {
+    font-weight: bolder;
+  }
+  .vibe-figma-root code, .vibe-figma-root kbd, .vibe-figma-root samp, .vibe-figma-root pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  .vibe-figma-root small {
+    font-size: 80%;
+  }
+  .vibe-figma-root sub, .vibe-figma-root sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  .vibe-figma-root sub {
+    bottom: -0.25em;
+  }
+  .vibe-figma-root sup {
+    top: -0.5em;
+  }
+  .vibe-figma-root table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  .vibe-figma-root :-moz-focusring {
+    outline: auto;
+  }
+  .vibe-figma-root progress {
+    vertical-align: baseline;
+  }
+  .vibe-figma-root summary {
+    display: list-item;
+  }
+  .vibe-figma-root ol, .vibe-figma-root ul, .vibe-figma-root menu {
+    list-style: none;
+  }
+  .vibe-figma-root img, .vibe-figma-root svg, .vibe-figma-root video, .vibe-figma-root canvas, .vibe-figma-root audio, .vibe-figma-root iframe, .vibe-figma-root embed, .vibe-figma-root object {
+    display: block;
+    vertical-align: middle;
+  }
+  .vibe-figma-root img, .vibe-figma-root video {
+    max-width: 100%;
+    height: auto;
+  }
+  .vibe-figma-root button, .vibe-figma-root input, .vibe-figma-root select, .vibe-figma-root optgroup, .vibe-figma-root textarea, .vibe-figma-root ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  .vibe-figma-root :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  .vibe-figma-root :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  .vibe-figma-root ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  .vibe-figma-root ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    .vibe-figma-root ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  .vibe-figma-root textarea {
+    resize: vertical;
+  }
+  .vibe-figma-root ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .vibe-figma-root ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit, .vibe-figma-root ::-webkit-datetime-edit-year-field, .vibe-figma-root ::-webkit-datetime-edit-month-field, .vibe-figma-root ::-webkit-datetime-edit-day-field, .vibe-figma-root ::-webkit-datetime-edit-hour-field, .vibe-figma-root ::-webkit-datetime-edit-minute-field, .vibe-figma-root ::-webkit-datetime-edit-second-field, .vibe-figma-root ::-webkit-datetime-edit-millisecond-field, .vibe-figma-root ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  .vibe-figma-root ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  .vibe-figma-root :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  .vibe-figma-root button, .vibe-figma-root input:where([type="button"], [type="reset"], [type="submit"]), .vibe-figma-root ::file-selector-button {
+    appearance: button;
+  }
+  .vibe-figma-root ::-webkit-inner-spin-button, .vibe-figma-root ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  .vibe-figma-root [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .vibe-figma-root .\@container\/card-header {
+    container-type: inline-size;
+    container-name: card-header;
+  }
+  .vibe-figma-root .pointer-events-none {
+    pointer-events: none;
+  }
+  .vibe-figma-root .invisible {
+    visibility: hidden;
+  }
+  .vibe-figma-root .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .vibe-figma-root .absolute {
+    position: absolute;
+  }
+  .vibe-figma-root .fixed {
+    position: fixed;
+  }
+  .vibe-figma-root .relative {
+    position: relative;
+  }
+  .vibe-figma-root .static {
+    position: static;
+  }
+  .vibe-figma-root .sticky {
+    position: sticky;
+  }
+  .vibe-figma-root .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .inset-x-0 {
+    inset-inline: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .inset-y-0 {
+    inset-block: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .start {
+    inset-inline-start: var(--spacing);
+  }
+  .vibe-figma-root .-top-12 {
+    top: calc(var(--spacing) * -12);
+  }
+  .vibe-figma-root .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .top-1 {
+    top: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .top-1\.5 {
+    top: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
+  .vibe-figma-root .top-3\.5 {
+    top: calc(var(--spacing) * 3.5);
+  }
+  .vibe-figma-root .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .top-\[1px\] {
+    top: 1px;
+  }
+  .vibe-figma-root .top-\[50\%\] {
+    top: 50%;
+  }
+  .vibe-figma-root .top-\[60\%\] {
+    top: 60%;
+  }
+  .vibe-figma-root .top-\[var\(--iplegal-spacing-24\)\] {
+    top: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .top-full {
+    top: 100%;
+  }
+  .vibe-figma-root .-right-12 {
+    right: calc(var(--spacing) * -12);
+  }
+  .vibe-figma-root .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .right-1 {
+    right: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .right-2 {
+    right: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .-bottom-12 {
+    bottom: calc(var(--spacing) * -12);
+  }
+  .vibe-figma-root .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .bottom-full {
+    bottom: 100%;
+  }
+  .vibe-figma-root .-left-12 {
+    left: calc(var(--spacing) * -12);
+  }
+  .vibe-figma-root .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .left-1 {
+    left: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .left-1\/2 {
+    left: calc(1 / 2 * 100%);
+  }
+  .vibe-figma-root .left-2 {
+    left: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .left-\[50\%\] {
+    left: 50%;
+  }
+  .vibe-figma-root .isolate {
+    isolation: isolate;
+  }
+  .vibe-figma-root .z-10 {
+    z-index: 10;
+  }
+  .vibe-figma-root .z-20 {
+    z-index: 20;
+  }
+  .vibe-figma-root .z-40 {
+    z-index: 40;
+  }
+  .vibe-figma-root .z-50 {
+    z-index: 50;
+  }
+  .vibe-figma-root .z-\[1\] {
+    z-index: 1;
+  }
+  .vibe-figma-root .col-start-2 {
+    grid-column-start: 2;
+  }
+  .vibe-figma-root .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+  .vibe-figma-root .row-start-1 {
+    grid-row-start: 1;
+  }
+  .vibe-figma-root .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
+  .vibe-figma-root .-mx-1 {
+    margin-inline: calc(var(--spacing) * -1);
+  }
+  .vibe-figma-root .-mx-\[var\(--iplegal-spacing-24\)\] {
+    margin-inline: calc(var(--iplegal-spacing-24) * -1);
+  }
+  .vibe-figma-root .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .mx-3\.5 {
+    margin-inline: calc(var(--spacing) * 3.5);
+  }
+  .vibe-figma-root .mx-\[var\(--iplegal-spacing-8\)\] {
+    margin-inline: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .mx-\[var\(--iplegal-spacing-16\)\] {
+    margin-inline: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .mx-auto {
+    margin-inline: auto;
+  }
+  .vibe-figma-root .my-0\.5 {
+    margin-block: calc(var(--spacing) * 0.5);
+  }
+  .vibe-figma-root .my-1 {
+    margin-block: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .my-\[var\(--iplegal-spacing-8\)\] {
+    margin-block: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .my-\[var\(--iplegal-spacing-24\)\] {
+    margin-block: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .-mt-4 {
+    margin-top: calc(var(--spacing) * -4);
+  }
+  .vibe-figma-root .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .mt-1\.5 {
+    margin-top: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .mt-\[var\(--iplegal-spacing-4\)\] {
+    margin-top: var(--iplegal-spacing-4);
+  }
+  .vibe-figma-root .mt-\[var\(--iplegal-spacing-8\)\] {
+    margin-top: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .mt-\[var\(--iplegal-spacing-12\)\] {
+    margin-top: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .mt-\[var\(--iplegal-spacing-16\)\] {
+    margin-top: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .mt-\[var\(--iplegal-spacing-24\)\] {
+    margin-top: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .mt-auto {
+    margin-top: auto;
+  }
+  .vibe-figma-root .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .mb-\[var\(--iplegal-spacing-4\)\] {
+    margin-bottom: var(--iplegal-spacing-4);
+  }
+  .vibe-figma-root .mb-\[var\(--iplegal-spacing-8\)\] {
+    margin-bottom: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .mb-\[var\(--iplegal-spacing-12\)\] {
+    margin-bottom: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .mb-\[var\(--iplegal-spacing-16\)\] {
+    margin-bottom: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .mb-\[var\(--iplegal-spacing-24\)\] {
+    margin-bottom: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .-ml-4 {
+    margin-left: calc(var(--spacing) * -4);
+  }
+  .vibe-figma-root .ml-1 {
+    margin-left: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .ml-\[var\(--iplegal-spacing-8\)\] {
+    margin-left: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .ml-\[var\(--iplegal-spacing-16\)\] {
+    margin-left: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .ml-auto {
+    margin-left: auto;
+  }
+  .vibe-figma-root .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+  .vibe-figma-root .block {
+    display: block;
+  }
+  .vibe-figma-root .flex {
+    display: flex;
+  }
+  .vibe-figma-root .grid {
+    display: grid;
+  }
+  .vibe-figma-root .hidden {
+    display: none;
+  }
+  .vibe-figma-root .inline-block {
+    display: inline-block;
+  }
+  .vibe-figma-root .inline-flex {
+    display: inline-flex;
+  }
+  .vibe-figma-root .table {
+    display: table;
+  }
+  .vibe-figma-root .table-caption {
+    display: table-caption;
+  }
+  .vibe-figma-root .table-cell {
+    display: table-cell;
+  }
+  .vibe-figma-root .table-row {
+    display: table-row;
+  }
+  .vibe-figma-root .field-sizing-content {
+    field-sizing: content;
+  }
+  .vibe-figma-root .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .vibe-figma-root .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
+  .vibe-figma-root .size-2 {
+    width: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .size-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+    height: calc(var(--spacing) * 2.5);
+  }
+  .vibe-figma-root .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .size-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+    height: calc(var(--spacing) * 3.5);
+  }
+  .vibe-figma-root .size-4 {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .size-7 {
+    width: calc(var(--spacing) * 7);
+    height: calc(var(--spacing) * 7);
+  }
+  .vibe-figma-root .size-8 {
+    width: calc(var(--spacing) * 8);
+    height: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .size-9 {
+    width: calc(var(--spacing) * 9);
+    height: calc(var(--spacing) * 9);
+  }
+  .vibe-figma-root .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
+  .vibe-figma-root .size-full {
+    width: 100%;
+    height: 100%;
+  }
+  .vibe-figma-root .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .vibe-figma-root .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .vibe-figma-root .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
+  .vibe-figma-root .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .vibe-figma-root .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .vibe-figma-root .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+  .vibe-figma-root .h-\[1\.15rem\] {
+    height: 1.15rem;
+  }
+  .vibe-figma-root .h-\[2px\] {
+    height: 2px;
+  }
+  .vibe-figma-root .h-\[calc\(100\%-1px\)\] {
+    height: calc(100% - 1px);
+  }
+  .vibe-figma-root .h-\[var\(--radix-navigation-menu-viewport-height\)\] {
+    height: var(--radix-navigation-menu-viewport-height);
+  }
+  .vibe-figma-root .h-\[var\(--radix-select-trigger-height\)\] {
+    height: var(--radix-select-trigger-height);
+  }
+  .vibe-figma-root .h-auto {
+    height: auto;
+  }
+  .vibe-figma-root .h-full {
+    height: 100%;
+  }
+  .vibe-figma-root .h-px {
+    height: 1px;
+  }
+  .vibe-figma-root .h-svh {
+    height: 100svh;
+  }
+  .vibe-figma-root .max-h-\(--radix-context-menu-content-available-height\) {
+    max-height: var(--radix-context-menu-content-available-height);
+  }
+  .vibe-figma-root .max-h-\(--radix-dropdown-menu-content-available-height\) {
+    max-height: var(--radix-dropdown-menu-content-available-height);
+  }
+  .vibe-figma-root .max-h-\(--radix-select-content-available-height\) {
+    max-height: var(--radix-select-content-available-height);
+  }
+  .vibe-figma-root .max-h-\[60vh\] {
+    max-height: 60vh;
+  }
+  .vibe-figma-root .max-h-\[300px\] {
+    max-height: 300px;
+  }
+  .vibe-figma-root .min-h-0 {
+    min-height: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .min-h-4 {
+    min-height: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .min-h-16 {
+    min-height: calc(var(--spacing) * 16);
+  }
+  .vibe-figma-root .min-h-\[44px\] {
+    min-height: 44px;
+  }
+  .vibe-figma-root .min-h-\[100px\] {
+    min-height: 100px;
+  }
+  .vibe-figma-root .min-h-screen {
+    min-height: 100vh;
+  }
+  .vibe-figma-root .min-h-svh {
+    min-height: 100svh;
+  }
+  .vibe-figma-root .w-\(--sidebar-width\) {
+    width: var(--sidebar-width);
+  }
+  .vibe-figma-root .w-0 {
+    width: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .vibe-figma-root .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .w-3\/4 {
+    width: calc(3 / 4 * 100%);
+  }
+  .vibe-figma-root .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .vibe-figma-root .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .vibe-figma-root .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .vibe-figma-root .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
+  .vibe-figma-root .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+  .vibe-figma-root .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
+  .vibe-figma-root .w-\[2px\] {
+    width: 2px;
+  }
+  .vibe-figma-root .w-\[100px\] {
+    width: 100px;
+  }
+  .vibe-figma-root .w-auto {
+    width: auto;
+  }
+  .vibe-figma-root .w-fit {
+    width: fit-content;
+  }
+  .vibe-figma-root .w-full {
+    width: 100%;
+  }
+  .vibe-figma-root .w-max {
+    width: max-content;
+  }
+  .vibe-figma-root .w-px {
+    width: 1px;
+  }
+  .vibe-figma-root .max-w-\(--skeleton-width\) {
+    max-width: var(--skeleton-width);
+  }
+  .vibe-figma-root .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
+  .vibe-figma-root .max-w-4xl {
+    max-width: var(--container-4xl);
+  }
+  .vibe-figma-root .max-w-\[80px\] {
+    max-width: 80px;
+  }
+  .vibe-figma-root .max-w-\[calc\(100\%-2rem\)\] {
+    max-width: calc(100% - 2rem);
+  }
+  .vibe-figma-root .max-w-\[var\(--iplegal-container-lg\)\] {
+    max-width: var(--iplegal-container-lg);
+  }
+  .vibe-figma-root .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .vibe-figma-root .max-w-max {
+    max-width: max-content;
+  }
+  .vibe-figma-root .max-w-none {
+    max-width: none;
+  }
+  .vibe-figma-root .max-w-sm {
+    max-width: var(--container-sm);
+  }
+  .vibe-figma-root .min-w-0 {
+    min-width: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .min-w-5 {
+    min-width: calc(var(--spacing) * 5);
+  }
+  .vibe-figma-root .min-w-8 {
+    min-width: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .min-w-9 {
+    min-width: calc(var(--spacing) * 9);
+  }
+  .vibe-figma-root .min-w-10 {
+    min-width: calc(var(--spacing) * 10);
+  }
+  .vibe-figma-root .min-w-\[8rem\] {
+    min-width: 8rem;
+  }
+  .vibe-figma-root .min-w-\[12rem\] {
+    min-width: 12rem;
+  }
+  .vibe-figma-root .min-w-\[var\(--radix-select-trigger-width\)\] {
+    min-width: var(--radix-select-trigger-width);
+  }
+  .vibe-figma-root .flex-1 {
+    flex: 1;
+  }
+  .vibe-figma-root .shrink-0 {
+    flex-shrink: 0;
+  }
+  .vibe-figma-root .grow {
+    flex-grow: 1;
+  }
+  .vibe-figma-root .grow-0 {
+    flex-grow: 0;
+  }
+  .vibe-figma-root .basis-full {
+    flex-basis: 100%;
+  }
+  .vibe-figma-root .caption-bottom {
+    caption-side: bottom;
+  }
+  .vibe-figma-root .border-collapse {
+    border-collapse: collapse;
+  }
+  .vibe-figma-root .origin-\(--radix-context-menu-content-transform-origin\) {
+    transform-origin: var(--radix-context-menu-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-dropdown-menu-content-transform-origin\) {
+    transform-origin: var(--radix-dropdown-menu-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-hover-card-content-transform-origin\) {
+    transform-origin: var(--radix-hover-card-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-menubar-content-transform-origin\) {
+    transform-origin: var(--radix-menubar-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-popover-content-transform-origin\) {
+    transform-origin: var(--radix-popover-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-select-content-transform-origin\) {
+    transform-origin: var(--radix-select-content-transform-origin);
+  }
+  .vibe-figma-root .origin-\(--radix-tooltip-content-transform-origin\) {
+    transform-origin: var(--radix-tooltip-content-transform-origin);
+  }
+  .vibe-figma-root .-translate-x-1\/2 {
+    --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .-translate-x-px {
+    --tw-translate-x: -1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .translate-x-\[-50\%\] {
+    --tw-translate-x: -50%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .translate-x-px {
+    --tw-translate-x: 1px;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .translate-y-0\.5 {
+    --tw-translate-y: calc(var(--spacing) * 0.5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .translate-y-\[-50\%\] {
+    --tw-translate-y: -50%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .translate-y-\[calc\(-50\%_-_2px\)\] {
+    --tw-translate-y: calc(-50% - 2px);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .vibe-figma-root .rotate-45 {
+    rotate: 45deg;
+  }
+  .vibe-figma-root .rotate-90 {
+    rotate: 90deg;
+  }
+  .vibe-figma-root .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .vibe-figma-root .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .vibe-figma-root .\!cursor-not-allowed {
+    cursor: not-allowed !important;
+  }
+  .vibe-figma-root .cursor-default {
+    cursor: default;
+  }
+  .vibe-figma-root .cursor-help {
+    cursor: help;
+  }
+  .vibe-figma-root .cursor-pointer {
+    cursor: pointer;
+  }
+  .vibe-figma-root .touch-none {
+    touch-action: none;
+  }
+  .vibe-figma-root .resize-none {
+    resize: none;
+  }
+  .vibe-figma-root .scroll-my-1 {
+    scroll-margin-block: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .scroll-py-1 {
+    scroll-padding-block: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .list-none {
+    list-style-type: none;
+  }
+  .vibe-figma-root .auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+  .vibe-figma-root .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .vibe-figma-root .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .vibe-figma-root .grid-cols-\[0_1fr\] {
+    grid-template-columns: 0 1fr;
+  }
+  .vibe-figma-root .grid-rows-\[auto_auto\] {
+    grid-template-rows: auto auto;
+  }
+  .vibe-figma-root .flex-col {
+    flex-direction: column;
+  }
+  .vibe-figma-root .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+  .vibe-figma-root .flex-row {
+    flex-direction: row;
+  }
+  .vibe-figma-root .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .vibe-figma-root .items-center {
+    align-items: center;
+  }
+  .vibe-figma-root .items-end {
+    align-items: flex-end;
+  }
+  .vibe-figma-root .items-start {
+    align-items: flex-start;
+  }
+  .vibe-figma-root .items-stretch {
+    align-items: stretch;
+  }
+  .vibe-figma-root .justify-between {
+    justify-content: space-between;
+  }
+  .vibe-figma-root .justify-center {
+    justify-content: center;
+  }
+  .vibe-figma-root .justify-end {
+    justify-content: flex-end;
+  }
+  .vibe-figma-root .justify-items-start {
+    justify-items: start;
+  }
+  .vibe-figma-root .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .gap-\[var\(--iplegal-spacing-4\)\] {
+    gap: var(--iplegal-spacing-4);
+  }
+  .vibe-figma-root .gap-\[var\(--iplegal-spacing-8\)\] {
+    gap: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .gap-\[var\(--iplegal-spacing-12\)\] {
+    gap: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .gap-\[var\(--iplegal-spacing-16\)\] {
+    gap: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .gap-\[var\(--iplegal-spacing-24\)\] {
+    gap: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .space-y-\[var\(--iplegal-spacing-8\)\] {
+    .vibe-figma-root :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--iplegal-spacing-8) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--iplegal-spacing-8) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .vibe-figma-root .space-y-\[var\(--iplegal-spacing-12\)\] {
+    .vibe-figma-root :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--iplegal-spacing-12) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--iplegal-spacing-12) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .vibe-figma-root .space-y-\[var\(--iplegal-spacing-16\)\] {
+    .vibe-figma-root :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--iplegal-spacing-16) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--iplegal-spacing-16) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .vibe-figma-root .space-y-\[var\(--iplegal-spacing-24\)\] {
+    .vibe-figma-root :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(var(--iplegal-spacing-24) * var(--tw-space-y-reverse));
+      margin-block-end: calc(var(--iplegal-spacing-24) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .vibe-figma-root .space-x-1 {
+    .vibe-figma-root :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 1) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
+  .vibe-figma-root .gap-y-0\.5 {
+    row-gap: calc(var(--spacing) * 0.5);
+  }
+  .vibe-figma-root .self-start {
+    align-self: flex-start;
+  }
+  .vibe-figma-root .justify-self-end {
+    justify-self: flex-end;
+  }
+  .vibe-figma-root .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .vibe-figma-root .overflow-auto {
+    overflow: auto;
+  }
+  .vibe-figma-root .overflow-hidden {
+    overflow: hidden;
+  }
+  .vibe-figma-root .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .vibe-figma-root .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .vibe-figma-root .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .vibe-figma-root .rounded {
+    border-radius: 0.25rem;
+  }
+  .vibe-figma-root .rounded-\[2px\] {
+    border-radius: 2px;
+  }
+  .vibe-figma-root .rounded-\[4px\] {
+    border-radius: 4px;
+  }
+  .vibe-figma-root .rounded-\[inherit\] {
+    border-radius: inherit;
+  }
+  .vibe-figma-root .rounded-\[var\(--iplegal-radius\)\] {
+    border-radius: var(--iplegal-radius);
+  }
+  .vibe-figma-root .rounded-\[var\(--iplegal-radius-lg\)\] {
+    border-radius: var(--iplegal-radius-lg);
+  }
+  .vibe-figma-root .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .vibe-figma-root .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .vibe-figma-root .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .vibe-figma-root .rounded-none {
+    border-radius: 0;
+  }
+  .vibe-figma-root .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
+  .vibe-figma-root .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .vibe-figma-root .rounded-xs {
+    border-radius: var(--radius-xs);
+  }
+  .vibe-figma-root .rounded-tl-sm {
+    border-top-left-radius: var(--radius-sm);
+  }
+  .vibe-figma-root .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .vibe-figma-root .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .vibe-figma-root .border-\[1\.5px\] {
+    border-style: var(--tw-border-style);
+    border-width: 1.5px;
+  }
+  .vibe-figma-root .border-y {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 1px;
+  }
+  .vibe-figma-root .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .vibe-figma-root .border-t-4 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 4px;
+  }
+  .vibe-figma-root .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .vibe-figma-root .border-r-4 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 4px;
+  }
+  .vibe-figma-root .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .vibe-figma-root .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .vibe-figma-root .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
+  .vibe-figma-root .border-l-4 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 4px;
+  }
+  .vibe-figma-root .border-dashed {
+    --tw-border-style: dashed;
+    border-style: dashed;
+  }
+  .vibe-figma-root .\!border-\[var\(--iplegal-danger\)\] {
+    border-color: var(--iplegal-danger) !important;
+  }
+  .vibe-figma-root .\!border-white {
+    border-color: var(--color-white) !important;
+  }
+  .vibe-figma-root .border-\(--color-border\) {
+    border-color: var(--color-border);
+  }
+  .vibe-figma-root .border-\[\#FDBA74\] {
+    border-color: #FDBA74;
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-border\)\] {
+    border-color: var(--iplegal-border);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-danger\)\] {
+    border-color: var(--iplegal-danger);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-danger-border\)\] {
+    border-color: var(--iplegal-danger-border);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-gray-300\)\] {
+    border-color: var(--iplegal-gray-300);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-info\)\] {
+    border-color: var(--iplegal-info);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-info-border\)\] {
+    border-color: var(--iplegal-info-border);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-primary\)\] {
+    border-color: var(--iplegal-primary);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-success\)\] {
+    border-color: var(--iplegal-success);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-success-border\)\] {
+    border-color: var(--iplegal-success-border);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-warning\)\] {
+    border-color: var(--iplegal-warning);
+  }
+  .vibe-figma-root .border-\[var\(--iplegal-warning-border\)\] {
+    border-color: var(--iplegal-warning-border);
+  }
+  .vibe-figma-root .border-transparent {
+    border-color: transparent;
+  }
+  .vibe-figma-root .border-white {
+    border-color: var(--color-white);
+  }
+  .vibe-figma-root .border-t-\[var\(--iplegal-gray-900\)\] {
+    border-top-color: var(--iplegal-gray-900);
+  }
+  .vibe-figma-root .border-t-transparent {
+    border-top-color: transparent;
+  }
+  .vibe-figma-root .border-l-transparent {
+    border-left-color: transparent;
+  }
+  .vibe-figma-root .bg-\(--color-bg\) {
+    background-color: var(--color-bg);
+  }
+  .vibe-figma-root .bg-\[\#FED7AA\] {
+    background-color: #FED7AA;
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-danger\)\] {
+    background-color: var(--iplegal-danger);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-danger-bg\)\] {
+    background-color: var(--iplegal-danger-bg);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-gray-50\)\] {
+    background-color: var(--iplegal-gray-50);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-gray-100\)\] {
+    background-color: var(--iplegal-gray-100);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-gray-200\)\] {
+    background-color: var(--iplegal-gray-200);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-gray-900\)\] {
+    background-color: var(--iplegal-gray-900);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-info\)\] {
+    background-color: var(--iplegal-info);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-info-bg\)\] {
+    background-color: var(--iplegal-info-bg);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-primary\)\] {
+    background-color: var(--iplegal-primary);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-success\)\] {
+    background-color: var(--iplegal-success);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-success-bg\)\] {
+    background-color: var(--iplegal-success-bg);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-warning\)\] {
+    background-color: var(--iplegal-warning);
+  }
+  .vibe-figma-root .bg-\[var\(--iplegal-warning-bg\)\] {
+    background-color: var(--iplegal-warning-bg);
+  }
+  .vibe-figma-root .bg-black {
+    background-color: var(--color-black);
+  }
+  .vibe-figma-root .bg-black\/50 {
+    background-color: color-mix(in srgb, #000 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+    }
+  }
+  .vibe-figma-root .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .vibe-figma-root .bg-transparent {
+    background-color: transparent;
+  }
+  .vibe-figma-root .bg-white {
+    background-color: var(--color-white);
+  }
+  .vibe-figma-root .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .vibe-figma-root .from-\[var\(--iplegal-primary\)\] {
+    --tw-gradient-from: var(--iplegal-primary);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .vibe-figma-root .to-\[var\(--iplegal-accent\)\] {
+    --tw-gradient-to: var(--iplegal-accent);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .vibe-figma-root .fill-current {
+    fill: currentcolor;
+  }
+  .vibe-figma-root .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .p-\[3px\] {
+    padding: 3px;
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-8\)\] {
+    padding: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-12\)\] {
+    padding: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-16\)\] {
+    padding: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-24\)\] {
+    padding: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-32\)\] {
+    padding: var(--iplegal-spacing-32);
+  }
+  .vibe-figma-root .p-\[var\(--iplegal-spacing-48\)\] {
+    padding: var(--iplegal-spacing-48);
+  }
+  .vibe-figma-root .p-px {
+    padding: 1px;
+  }
+  .vibe-figma-root .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .vibe-figma-root .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .px-\[var\(--iplegal-spacing-8\)\] {
+    padding-inline: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .px-\[var\(--iplegal-spacing-12\)\] {
+    padding-inline: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .px-\[var\(--iplegal-spacing-16\)\] {
+    padding-inline: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .px-\[var\(--iplegal-spacing-24\)\] {
+    padding-inline: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .vibe-figma-root .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .vibe-figma-root .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-4\)\] {
+    padding-block: var(--iplegal-spacing-4);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-8\)\] {
+    padding-block: var(--iplegal-spacing-8);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-12\)\] {
+    padding-block: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-16\)\] {
+    padding-block: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-24\)\] {
+    padding-block: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-32\)\] {
+    padding-block: var(--iplegal-spacing-32);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-48\)\] {
+    padding-block: var(--iplegal-spacing-48);
+  }
+  .vibe-figma-root .py-\[var\(--iplegal-spacing-64\)\] {
+    padding-block: var(--iplegal-spacing-64);
+  }
+  .vibe-figma-root .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
+  .vibe-figma-root .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+  .vibe-figma-root .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .pt-\[var\(--iplegal-spacing-12\)\] {
+    padding-top: var(--iplegal-spacing-12);
+  }
+  .vibe-figma-root .pt-\[var\(--iplegal-spacing-16\)\] {
+    padding-top: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .pt-\[var\(--iplegal-spacing-24\)\] {
+    padding-top: var(--iplegal-spacing-24);
+  }
+  .vibe-figma-root .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .pr-2\.5 {
+    padding-right: calc(var(--spacing) * 2.5);
+  }
+  .vibe-figma-root .pr-8 {
+    padding-right: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .pr-\[var\(--iplegal-spacing-16\)\] {
+    padding-right: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .vibe-figma-root .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .vibe-figma-root .pb-\[80px\] {
+    padding-bottom: 80px;
+  }
+  .vibe-figma-root .pb-\[var\(--iplegal-spacing-16\)\] {
+    padding-bottom: var(--iplegal-spacing-16);
+  }
+  .vibe-figma-root .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .vibe-figma-root .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .vibe-figma-root .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
+  .vibe-figma-root .text-center {
+    text-align: center;
+  }
+  .vibe-figma-root .text-left {
+    text-align: left;
+  }
+  .vibe-figma-root .align-middle {
+    vertical-align: middle;
+  }
+  .vibe-figma-root .font-mono {
+    font-family: var(--font-mono);
+  }
+  .vibe-figma-root .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .vibe-figma-root .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .vibe-figma-root .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .vibe-figma-root .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .vibe-figma-root .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .vibe-figma-root .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .vibe-figma-root .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .vibe-figma-root .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .vibe-figma-root .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .vibe-figma-root .text-\[0\.8rem\] {
+    font-size: 0.8rem;
+  }
+  .vibe-figma-root .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .vibe-figma-root .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .vibe-figma-root .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .vibe-figma-root .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .vibe-figma-root .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .vibe-figma-root .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .vibe-figma-root .text-balance {
+    text-wrap: balance;
+  }
+  .vibe-figma-root .break-words {
+    overflow-wrap: break-word;
+  }
+  .vibe-figma-root .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .vibe-figma-root .whitespace-pre-line {
+    white-space: pre-line;
+  }
+  .vibe-figma-root .\!text-\[var\(--iplegal-danger\)\] {
+    color: var(--iplegal-danger) !important;
+  }
+  .vibe-figma-root .\!text-\[var\(--iplegal-primary\)\] {
+    color: var(--iplegal-primary) !important;
+  }
+  .vibe-figma-root .\!text-white {
+    color: var(--color-white) !important;
+  }
+  .vibe-figma-root .text-\[\#C2410C\] {
+    color: #C2410C;
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-danger\)\] {
+    color: var(--iplegal-danger);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-gray-500\)\] {
+    color: var(--iplegal-gray-500);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-gray-600\)\] {
+    color: var(--iplegal-gray-600);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-gray-700\)\] {
+    color: var(--iplegal-gray-700);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-gray-900\)\] {
+    color: var(--iplegal-gray-900);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-info\)\] {
+    color: var(--iplegal-info);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-primary\)\] {
+    color: var(--iplegal-primary);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-success\)\] {
+    color: var(--iplegal-success);
+  }
+  .vibe-figma-root .text-\[var\(--iplegal-warning\)\] {
+    color: var(--iplegal-warning);
+  }
+  .vibe-figma-root .text-current {
+    color: currentcolor;
+  }
+  .vibe-figma-root .text-white {
+    color: var(--color-white);
+  }
+  .vibe-figma-root .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
+  }
+  .vibe-figma-root .underline-offset-4 {
+    text-underline-offset: 4px;
+  }
+  .vibe-figma-root .accent-\[var\(--iplegal-primary\)\] {
+    accent-color: var(--iplegal-primary);
+  }
+  .vibe-figma-root .\!opacity-50 {
+    opacity: 50% !important;
+  }
+  .vibe-figma-root .opacity-50 {
+    opacity: 50%;
+  }
+  .vibe-figma-root .opacity-70 {
+    opacity: 70%;
+  }
+  .vibe-figma-root .opacity-95 {
+    opacity: 95%;
+  }
+  .vibe-figma-root .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-\[0_0_0_1px_hsl\(var\(--sidebar-border\)\)\] {
+    --tw-shadow: 0 0 0 1px var(--tw-shadow-color, hsl(var(--sidebar-border)));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-\[var\(--iplegal-shadow-lg\)\] {
+    --tw-shadow: var(--iplegal-shadow-lg);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-\[var\(--iplegal-shadow-md\)\] {
+    --tw-shadow: var(--iplegal-shadow-md);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-\[var\(--iplegal-shadow-sm\)\] {
+    --tw-shadow: var(--iplegal-shadow-sm);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-none {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .shadow-xs {
+    --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .ring-0 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .vibe-figma-root .outline-hidden {
+    --tw-outline-style: none;
+    outline-style: none;
+    @media (forced-colors: active) {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+  }
+  .vibe-figma-root .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .vibe-figma-root .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-\[color\,box-shadow\] {
+    transition-property: color,box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-\[left\,right\,width\] {
+    transition-property: left,right,width;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-\[margin\,opacity\] {
+    transition-property: margin,opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-\[width\,height\,padding\] {
+    transition-property: width,height,padding;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-\[width\] {
+    transition-property: width;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-colors {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-shadow {
+    transition-property: box-shadow;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .vibe-figma-root .transition-none {
+    transition-property: none;
+  }
+  .vibe-figma-root .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .vibe-figma-root .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .vibe-figma-root .duration-1000 {
+    --tw-duration: 1000ms;
+    transition-duration: 1000ms;
+  }
+  .vibe-figma-root .ease-in-out {
+    --tw-ease: var(--ease-in-out);
+    transition-timing-function: var(--ease-in-out);
+  }
+  .vibe-figma-root .ease-linear {
+    --tw-ease: linear;
+    transition-timing-function: linear;
+  }
+  .vibe-figma-root .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .vibe-figma-root .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .vibe-figma-root .group-focus-within\/menu-item\:opacity-100 {
+    .vibe-figma-root &:is(:where(.group\/menu-item):focus-within *) {
+      opacity: 100%;
+    }
+  }
+  .vibe-figma-root .group-hover\:text-\[var\(--iplegal-primary\)\] {
+    .vibe-figma-root &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--iplegal-primary);
+      }
+    }
+  }
+  .vibe-figma-root .group-hover\/menu-item\:opacity-100 {
+    .vibe-figma-root &:is(:where(.group\/menu-item):hover *) {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .vibe-figma-root .group-has-data-\[sidebar\=menu-action\]\/menu-item\:pr-8 {
+    .vibe-figma-root &:is(:where(.group\/menu-item):has(*[data-sidebar="menu-action"]) *) {
+      padding-right: calc(var(--spacing) * 8);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:-mt-8 {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      margin-top: calc(var(--spacing) * -8);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:hidden {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      display: none;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:size-8\! {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      width: calc(var(--spacing) * 8) !important;
+      height: calc(var(--spacing) * 8) !important;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:w-\(--sidebar-width-icon\) {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      width: var(--sidebar-width-icon);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:w-\[calc\(var\(--sidebar-width-icon\)\+\(--spacing\(4\)\)\)\] {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      width: calc(var(--sidebar-width-icon) + (calc(var(--spacing) * 4)));
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:w-\[calc\(var\(--sidebar-width-icon\)\+\(--spacing\(4\)\)\+2px\)\] {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      width: calc(var(--sidebar-width-icon) + (calc(var(--spacing) * 4)) + 2px);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:overflow-hidden {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      overflow: hidden;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:p-0\! {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      padding: calc(var(--spacing) * 0) !important;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:p-2\! {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      padding: calc(var(--spacing) * 2) !important;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=icon\]\:opacity-0 {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="icon"] *) {
+      opacity: 0%;
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=offcanvas\]\:right-\[calc\(var\(--sidebar-width\)\*-1\)\] {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="offcanvas"] *) {
+      right: calc(var(--sidebar-width) * -1);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=offcanvas\]\:left-\[calc\(var\(--sidebar-width\)\*-1\)\] {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="offcanvas"] *) {
+      left: calc(var(--sidebar-width) * -1);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=offcanvas\]\:w-0 {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="offcanvas"] *) {
+      width: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=offcanvas\]\:translate-x-0 {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="offcanvas"] *) {
+      --tw-translate-x: calc(var(--spacing) * 0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .group-data-\[disabled\=true\]\:pointer-events-none {
+    .vibe-figma-root &:is(:where(.group)[data-disabled="true"] *) {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .group-data-\[disabled\=true\]\:opacity-50 {
+    .vibe-figma-root &:is(:where(.group)[data-disabled="true"] *) {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .group-data-\[side\=left\]\:-right-4 {
+    .vibe-figma-root &:is(:where(.group)[data-side="left"] *) {
+      right: calc(var(--spacing) * -4);
+    }
+  }
+  .vibe-figma-root .group-data-\[side\=left\]\:border-r {
+    .vibe-figma-root &:is(:where(.group)[data-side="left"] *) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .vibe-figma-root .group-data-\[side\=right\]\:left-0 {
+    .vibe-figma-root &:is(:where(.group)[data-side="right"] *) {
+      left: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .group-data-\[side\=right\]\:rotate-180 {
+    .vibe-figma-root &:is(:where(.group)[data-side="right"] *) {
+      rotate: 180deg;
+    }
+  }
+  .vibe-figma-root .group-data-\[side\=right\]\:border-l {
+    .vibe-figma-root &:is(:where(.group)[data-side="right"] *) {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+  }
+  .vibe-figma-root .group-data-\[state\=open\]\:rotate-180 {
+    .vibe-figma-root &:is(:where(.group)[data-state="open"] *) {
+      rotate: 180deg;
+    }
+  }
+  .vibe-figma-root .group-data-\[variant\=floating\]\:rounded-lg {
+    .vibe-figma-root &:is(:where(.group)[data-variant="floating"] *) {
+      border-radius: var(--radius-lg);
+    }
+  }
+  .vibe-figma-root .group-data-\[variant\=floating\]\:border {
+    .vibe-figma-root &:is(:where(.group)[data-variant="floating"] *) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .vibe-figma-root .group-data-\[variant\=floating\]\:shadow-sm {
+    .vibe-figma-root &:is(:where(.group)[data-variant="floating"] *) {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .group-data-\[vaul-drawer-direction\=bottom\]\/drawer-content\:block {
+    .vibe-figma-root &:is(:where(.group\/drawer-content)[data-vaul-drawer-direction="bottom"] *) {
+      display: block;
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:top-full {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      top: 100%;
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:mt-1\.5 {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      margin-top: calc(var(--spacing) * 1.5);
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:overflow-hidden {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      overflow: hidden;
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:rounded-md {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      border-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:border {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:shadow {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .group-data-\[viewport\=false\]\/navigation-menu\:duration-200 {
+    .vibe-figma-root &:is(:where(.group\/navigation-menu)[data-viewport="false"] *) {
+      --tw-duration: 200ms;
+      transition-duration: 200ms;
+    }
+  }
+  .vibe-figma-root .peer-disabled\:cursor-not-allowed {
+    .vibe-figma-root &:is(:where(.peer):disabled ~ *) {
+      cursor: not-allowed;
+    }
+  }
+  .vibe-figma-root .peer-disabled\:opacity-50 {
+    .vibe-figma-root &:is(:where(.peer):disabled ~ *) {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .peer-data-\[size\=default\]\/menu-button\:top-1\.5 {
+    .vibe-figma-root &:is(:where(.peer\/menu-button)[data-size="default"] ~ *) {
+      top: calc(var(--spacing) * 1.5);
+    }
+  }
+  .vibe-figma-root .peer-data-\[size\=lg\]\/menu-button\:top-2\.5 {
+    .vibe-figma-root &:is(:where(.peer\/menu-button)[data-size="lg"] ~ *) {
+      top: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .peer-data-\[size\=sm\]\/menu-button\:top-1 {
+    .vibe-figma-root &:is(:where(.peer\/menu-button)[data-size="sm"] ~ *) {
+      top: calc(var(--spacing) * 1);
+    }
+  }
+  .vibe-figma-root .file\:inline-flex {
+    .vibe-figma-root &::file-selector-button {
+      display: inline-flex;
+    }
+  }
+  .vibe-figma-root .file\:h-7 {
+    .vibe-figma-root &::file-selector-button {
+      height: calc(var(--spacing) * 7);
+    }
+  }
+  .vibe-figma-root .file\:border-0 {
+    .vibe-figma-root &::file-selector-button {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+  }
+  .vibe-figma-root .file\:bg-transparent {
+    .vibe-figma-root &::file-selector-button {
+      background-color: transparent;
+    }
+  }
+  .vibe-figma-root .file\:text-sm {
+    .vibe-figma-root &::file-selector-button {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .vibe-figma-root .file\:font-medium {
+    .vibe-figma-root &::file-selector-button {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .vibe-figma-root .after\:absolute {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .vibe-figma-root .after\:-inset-2 {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      inset: calc(var(--spacing) * -2);
+    }
+  }
+  .vibe-figma-root .after\:inset-y-0 {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      inset-block: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .after\:left-1\/2 {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      left: calc(1 / 2 * 100%);
+    }
+  }
+  .vibe-figma-root .after\:w-1 {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 1);
+    }
+  }
+  .vibe-figma-root .after\:w-\[2px\] {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      width: 2px;
+    }
+  }
+  .vibe-figma-root .after\:-translate-x-1\/2 {
+    .vibe-figma-root &::after {
+      content: var(--tw-content);
+      --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .group-data-\[collapsible\=offcanvas\]\:after\:left-full {
+    .vibe-figma-root &:is(:where(.group)[data-collapsible="offcanvas"] *) {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        left: 100%;
+      }
+    }
+  }
+  .vibe-figma-root .first\:rounded-l-md {
+    .vibe-figma-root &:first-child {
+      border-top-left-radius: var(--radius-md);
+      border-bottom-left-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .first\:border-l {
+    .vibe-figma-root &:first-child {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+  }
+  .vibe-figma-root .last\:rounded-r-md {
+    .vibe-figma-root &:last-child {
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .last\:border-0 {
+    .vibe-figma-root &:last-child {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+  }
+  .vibe-figma-root .last\:border-b-0 {
+    .vibe-figma-root &:last-child {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 0px;
+    }
+  }
+  .vibe-figma-root .last\:pb-0 {
+    .vibe-figma-root &:last-child {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .focus-within\:relative {
+    .vibe-figma-root &:focus-within {
+      position: relative;
+    }
+  }
+  .vibe-figma-root .focus-within\:z-20 {
+    .vibe-figma-root &:focus-within {
+      z-index: 20;
+    }
+  }
+  .vibe-figma-root .hover\:border-\[var\(--iplegal-gray-300\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        border-color: var(--iplegal-gray-300);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:border-\[var\(--iplegal-primary\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        border-color: var(--iplegal-primary);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:\!bg-\[var\(--iplegal-danger-bg\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-danger-bg) !important;
+      }
+    }
+  }
+  .vibe-figma-root .hover\:\!bg-\[var\(--iplegal-gray-100\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-gray-100) !important;
+      }
+    }
+  }
+  .vibe-figma-root .hover\:\!bg-white\/10 {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 10%, transparent) !important;
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 10%, transparent) !important;
+        }
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-\[var\(--iplegal-danger-bg\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-danger-bg);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-\[var\(--iplegal-gray-50\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-gray-50);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-\[var\(--iplegal-gray-100\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-gray-100);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-\[var\(--iplegal-gray-200\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-gray-200);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-\[var\(--iplegal-primary-hover\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: var(--iplegal-primary-hover);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:bg-white\/10 {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        background-color: color-mix(in srgb, #fff 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+        }
+      }
+    }
+  }
+  .vibe-figma-root .hover\:text-\[var\(--iplegal-gray-900\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        color: var(--iplegal-gray-900);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:text-\[var\(--iplegal-primary\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        color: var(--iplegal-primary);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:underline {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        text-decoration-line: underline;
+      }
+    }
+  }
+  .vibe-figma-root .hover\:opacity-80 {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        opacity: 80%;
+      }
+    }
+  }
+  .vibe-figma-root .hover\:opacity-100 {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
+  .vibe-figma-root .hover\:shadow-\[0_0_0_1px_hsl\(var\(--sidebar-accent\)\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        --tw-shadow: 0 0 0 1px var(--tw-shadow-color, hsl(var(--sidebar-accent)));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:shadow-\[var\(--iplegal-shadow-md\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        --tw-shadow: var(--iplegal-shadow-md);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:shadow-\[var\(--iplegal-shadow-sm\)\] {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        --tw-shadow: var(--iplegal-shadow-sm);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .vibe-figma-root .hover\:ring-4 {
+    .vibe-figma-root &:hover {
+      @media (hover: hover) {
+        --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .vibe-figma-root .focus\:z-10 {
+    .vibe-figma-root &:focus {
+      z-index: 10;
+    }
+  }
+  .vibe-figma-root .focus\:border-transparent {
+    .vibe-figma-root &:focus {
+      border-color: transparent;
+    }
+  }
+  .vibe-figma-root .focus\:ring-2 {
+    .vibe-figma-root &:focus {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .focus\:ring-\[var\(--iplegal-danger\)\] {
+    .vibe-figma-root &:focus {
+      --tw-ring-color: var(--iplegal-danger);
+    }
+  }
+  .vibe-figma-root .focus\:ring-\[var\(--iplegal-focus-ring\)\] {
+    .vibe-figma-root &:focus {
+      --tw-ring-color: var(--iplegal-focus-ring);
+    }
+  }
+  .vibe-figma-root .focus\:ring-offset-2 {
+    .vibe-figma-root &:focus {
+      --tw-ring-offset-width: 2px;
+      --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    }
+  }
+  .vibe-figma-root .focus\:outline-hidden {
+    .vibe-figma-root &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+  }
+  .vibe-figma-root .focus\:outline-none {
+    .vibe-figma-root &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
+  .vibe-figma-root .focus-visible\:z-10 {
+    .vibe-figma-root &:focus-visible {
+      z-index: 10;
+    }
+  }
+  .vibe-figma-root .focus-visible\:ring-1 {
+    .vibe-figma-root &:focus-visible {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .focus-visible\:ring-2 {
+    .vibe-figma-root &:focus-visible {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .focus-visible\:ring-4 {
+    .vibe-figma-root &:focus-visible {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .focus-visible\:ring-\[3px\] {
+    .vibe-figma-root &:focus-visible {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .focus-visible\:ring-offset-1 {
+    .vibe-figma-root &:focus-visible {
+      --tw-ring-offset-width: 1px;
+      --tw-ring-offset-shadow: var(--tw-ring-inset,) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline-hidden {
+    .vibe-figma-root &:focus-visible {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline {
+    .vibe-figma-root &:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 1px;
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline-1 {
+    .vibe-figma-root &:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 1px;
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline-2 {
+    .vibe-figma-root &:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 2px;
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline-offset-2 {
+    .vibe-figma-root &:focus-visible {
+      outline-offset: 2px;
+    }
+  }
+  .vibe-figma-root .focus-visible\:outline-\[var\(--iplegal-primary\)\] {
+    .vibe-figma-root &:focus-visible {
+      outline-color: var(--iplegal-primary);
+    }
+  }
+  .vibe-figma-root .active\:bg-\[var\(--iplegal-gray-100\)\] {
+    .vibe-figma-root &:active {
+      background-color: var(--iplegal-gray-100);
+    }
+  }
+  .vibe-figma-root .active\:bg-\[var\(--iplegal-primary-active\)\] {
+    .vibe-figma-root &:active {
+      background-color: var(--iplegal-primary-active);
+    }
+  }
+  .vibe-figma-root .disabled\:pointer-events-none {
+    .vibe-figma-root &:disabled {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .disabled\:cursor-not-allowed {
+    .vibe-figma-root &:disabled {
+      cursor: not-allowed;
+    }
+  }
+  .vibe-figma-root .disabled\:opacity-50 {
+    .vibe-figma-root &:disabled {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .in-data-\[side\=left\]\:cursor-w-resize {
+    .vibe-figma-root :where(*[data-side="left"]) & {
+      cursor: w-resize;
+    }
+  }
+  .vibe-figma-root .in-data-\[side\=right\]\:cursor-e-resize {
+    .vibe-figma-root :where(*[data-side="right"]) & {
+      cursor: e-resize;
+    }
+  }
+  .vibe-figma-root .has-disabled\:opacity-50 {
+    .vibe-figma-root &:has(*:disabled) {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .has-data-\[slot\=card-action\]\:grid-cols-\[1fr_auto\] {
+    .vibe-figma-root &:has(*[data-slot="card-action"]) {
+      grid-template-columns: 1fr auto;
+    }
+  }
+  .vibe-figma-root .has-\[\>svg\]\:grid-cols-\[calc\(var\(--spacing\)\*4\)_1fr\] {
+    .vibe-figma-root &:has(>svg) {
+      grid-template-columns: calc(var(--spacing) * 4) 1fr;
+    }
+  }
+  .vibe-figma-root .has-\[\>svg\]\:gap-x-3 {
+    .vibe-figma-root &:has(>svg) {
+      column-gap: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .has-\[\>svg\]\:px-2\.5 {
+    .vibe-figma-root &:has(>svg) {
+      padding-inline: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .has-\[\>svg\]\:px-3 {
+    .vibe-figma-root &:has(>svg) {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .has-\[\>svg\]\:px-4 {
+    .vibe-figma-root &:has(>svg) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .vibe-figma-root .aria-disabled\:pointer-events-none {
+    .vibe-figma-root &[aria-disabled="true"] {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .aria-disabled\:opacity-50 {
+    .vibe-figma-root &[aria-disabled="true"] {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .aria-selected\:opacity-100 {
+    .vibe-figma-root &[aria-selected="true"] {
+      opacity: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[active\=true\]\:z-10 {
+    .vibe-figma-root &[data-active="true"] {
+      z-index: 10;
+    }
+  }
+  .vibe-figma-root .data-\[active\=true\]\:font-medium {
+    .vibe-figma-root &[data-active="true"] {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .vibe-figma-root .data-\[active\=true\]\:ring-\[3px\] {
+    .vibe-figma-root &[data-active="true"] {
+      --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .data-\[disabled\]\:pointer-events-none {
+    .vibe-figma-root &[data-disabled] {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .data-\[disabled\]\:opacity-50 {
+    .vibe-figma-root &[data-disabled] {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .data-\[disabled\=true\]\:pointer-events-none {
+    .vibe-figma-root &[data-disabled="true"] {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .data-\[disabled\=true\]\:opacity-50 {
+    .vibe-figma-root &[data-disabled="true"] {
+      opacity: 50%;
+    }
+  }
+  .vibe-figma-root .data-\[inset\]\:pl-8 {
+    .vibe-figma-root &[data-inset] {
+      padding-left: calc(var(--spacing) * 8);
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=horizontal\]\:h-4 {
+    .vibe-figma-root &[data-orientation="horizontal"] {
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=horizontal\]\:h-full {
+    .vibe-figma-root &[data-orientation="horizontal"] {
+      height: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=horizontal\]\:h-px {
+    .vibe-figma-root &[data-orientation="horizontal"] {
+      height: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=horizontal\]\:w-full {
+    .vibe-figma-root &[data-orientation="horizontal"] {
+      width: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:h-full {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      height: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:min-h-44 {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      min-height: calc(var(--spacing) * 44);
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:w-1\.5 {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      width: calc(var(--spacing) * 1.5);
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:w-auto {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      width: auto;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:w-full {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      width: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:w-px {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      width: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[orientation\=vertical\]\:flex-col {
+    .vibe-figma-root &[data-orientation="vertical"] {
+      flex-direction: column;
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:h-px {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      height: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:w-full {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      width: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:flex-col {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      flex-direction: column;
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:after\:left-0 {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        left: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:after\:h-1 {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        height: calc(var(--spacing) * 1);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:after\:w-full {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        width: 100%;
+      }
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:after\:translate-x-0 {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        --tw-translate-x: calc(var(--spacing) * 0);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[panel-group-direction\=vertical\]\:after\:-translate-y-1\/2 {
+    .vibe-figma-root &[data-panel-group-direction="vertical"] {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[side\=bottom\]\:translate-y-1 {
+    .vibe-figma-root &[data-side="bottom"] {
+      --tw-translate-y: calc(var(--spacing) * 1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[side\=left\]\:-translate-x-1 {
+    .vibe-figma-root &[data-side="left"] {
+      --tw-translate-x: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[side\=right\]\:translate-x-1 {
+    .vibe-figma-root &[data-side="right"] {
+      --tw-translate-x: calc(var(--spacing) * 1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[side\=top\]\:-translate-y-1 {
+    .vibe-figma-root &[data-side="top"] {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[size\=default\]\:h-9 {
+    .vibe-figma-root &[data-size="default"] {
+      height: calc(var(--spacing) * 9);
+    }
+  }
+  .vibe-figma-root .data-\[size\=sm\]\:h-8 {
+    .vibe-figma-root &[data-size="sm"] {
+      height: calc(var(--spacing) * 8);
+    }
+  }
+  .vibe-figma-root .\*\*\:data-\[slot\=command-input-wrapper\]\:h-12 {
+    .vibe-figma-root :is(& *) {
+      .vibe-figma-root &[data-slot="command-input-wrapper"] {
+        height: calc(var(--spacing) * 12);
+      }
+    }
+  }
+  .vibe-figma-root .\*\*\:data-\[slot\=navigation-menu-link\]\:focus\:ring-0 {
+    .vibe-figma-root :is(& *) {
+      .vibe-figma-root &[data-slot="navigation-menu-link"] {
+        .vibe-figma-root &:focus {
+          --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+          box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+        }
+      }
+    }
+  }
+  .vibe-figma-root .\*\*\:data-\[slot\=navigation-menu-link\]\:focus\:outline-none {
+    .vibe-figma-root :is(& *) {
+      .vibe-figma-root &[data-slot="navigation-menu-link"] {
+        .vibe-figma-root &:focus {
+          --tw-outline-style: none;
+          outline-style: none;
+        }
+      }
+    }
+  }
+  .vibe-figma-root .\*\:data-\[slot\=select-value\]\:line-clamp-1 {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &[data-slot="select-value"] {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+      }
+    }
+  }
+  .vibe-figma-root .\*\:data-\[slot\=select-value\]\:flex {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &[data-slot="select-value"] {
+        display: flex;
+      }
+    }
+  }
+  .vibe-figma-root .\*\:data-\[slot\=select-value\]\:items-center {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &[data-slot="select-value"] {
+        align-items: center;
+      }
+    }
+  }
+  .vibe-figma-root .\*\:data-\[slot\=select-value\]\:gap-2 {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &[data-slot="select-value"] {
+        gap: calc(var(--spacing) * 2);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[state\=checked\]\:translate-x-\[calc\(100\%-2px\)\] {
+    .vibe-figma-root &[data-state="checked"] {
+      --tw-translate-x: calc(100% - 2px);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[state\=closed\]\:duration-300 {
+    .vibe-figma-root &[data-state="closed"] {
+      --tw-duration: 300ms;
+      transition-duration: 300ms;
+    }
+  }
+  .vibe-figma-root .data-\[state\=open\]\:opacity-100 {
+    .vibe-figma-root &[data-state="open"] {
+      opacity: 100%;
+    }
+  }
+  .vibe-figma-root .data-\[state\=open\]\:duration-500 {
+    .vibe-figma-root &[data-state="open"] {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+  }
+  .vibe-figma-root .data-\[state\=unchecked\]\:translate-x-0 {
+    .vibe-figma-root &[data-state="unchecked"] {
+      --tw-translate-x: calc(var(--spacing) * 0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .data-\[variant\=outline\]\:border-l-0 {
+    .vibe-figma-root &[data-variant="outline"] {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 0px;
+    }
+  }
+  .vibe-figma-root .data-\[variant\=outline\]\:shadow-xs {
+    .vibe-figma-root &[data-variant="outline"] {
+      --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .vibe-figma-root .data-\[variant\=outline\]\:first\:border-l {
+    .vibe-figma-root &[data-variant="outline"] {
+      .vibe-figma-root &:first-child {
+        border-left-style: var(--tw-border-style);
+        border-left-width: 1px;
+      }
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:inset-x-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      inset-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:bottom-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:mt-24 {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      margin-top: calc(var(--spacing) * 24);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:max-h-\[80vh\] {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      max-height: 80vh;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:rounded-t-lg {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      border-top-left-radius: var(--radius-lg);
+      border-top-right-radius: var(--radius-lg);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=bottom\]\:border-t {
+    .vibe-figma-root &[data-vaul-drawer-direction="bottom"] {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=left\]\:inset-y-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="left"] {
+      inset-block: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=left\]\:left-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="left"] {
+      left: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=left\]\:w-3\/4 {
+    .vibe-figma-root &[data-vaul-drawer-direction="left"] {
+      width: calc(3 / 4 * 100%);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=left\]\:border-r {
+    .vibe-figma-root &[data-vaul-drawer-direction="left"] {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=right\]\:inset-y-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="right"] {
+      inset-block: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=right\]\:right-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="right"] {
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=right\]\:w-3\/4 {
+    .vibe-figma-root &[data-vaul-drawer-direction="right"] {
+      width: calc(3 / 4 * 100%);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=right\]\:border-l {
+    .vibe-figma-root &[data-vaul-drawer-direction="right"] {
+      border-left-style: var(--tw-border-style);
+      border-left-width: 1px;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:inset-x-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      inset-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:top-0 {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      top: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:mb-24 {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      margin-bottom: calc(var(--spacing) * 24);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:max-h-\[80vh\] {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      max-height: 80vh;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:rounded-b-lg {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      border-bottom-right-radius: var(--radius-lg);
+      border-bottom-left-radius: var(--radius-lg);
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=top\]\:border-b {
+    .vibe-figma-root &[data-vaul-drawer-direction="top"] {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
+  .vibe-figma-root .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .vibe-figma-root .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
+  .vibe-figma-root .sm\:inline {
+    @media (width >= 40rem) {
+      display: inline;
+    }
+  }
+  .vibe-figma-root .sm\:max-w-lg {
+    @media (width >= 40rem) {
+      max-width: var(--container-lg);
+    }
+  }
+  .vibe-figma-root .sm\:max-w-sm {
+    @media (width >= 40rem) {
+      max-width: var(--container-sm);
+    }
+  }
+  .vibe-figma-root .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .vibe-figma-root .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .vibe-figma-root .sm\:justify-end {
+    @media (width >= 40rem) {
+      justify-content: flex-end;
+    }
+  }
+  .vibe-figma-root .sm\:gap-2\.5 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .sm\:pr-2\.5 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .sm\:pl-2\.5 {
+    @media (width >= 40rem) {
+      padding-left: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .sm\:text-left {
+    @media (width >= 40rem) {
+      text-align: left;
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=left\]\:sm\:max-w-sm {
+    .vibe-figma-root &[data-vaul-drawer-direction="left"] {
+      @media (width >= 40rem) {
+        max-width: var(--container-sm);
+      }
+    }
+  }
+  .vibe-figma-root .data-\[vaul-drawer-direction\=right\]\:sm\:max-w-sm {
+    .vibe-figma-root &[data-vaul-drawer-direction="right"] {
+      @media (width >= 40rem) {
+        max-width: var(--container-sm);
+      }
+    }
+  }
+  .vibe-figma-root .md\:absolute {
+    @media (width >= 48rem) {
+      position: absolute;
+    }
+  }
+  .vibe-figma-root .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .vibe-figma-root .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .vibe-figma-root .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
+  .vibe-figma-root .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .vibe-figma-root .md\:table-cell {
+    @media (width >= 48rem) {
+      display: table-cell;
+    }
+  }
+  .vibe-figma-root .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
+    @media (width >= 48rem) {
+      width: var(--radix-navigation-menu-viewport-width);
+    }
+  }
+  .vibe-figma-root .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
+    }
+  }
+  .vibe-figma-root .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .vibe-figma-root .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .vibe-figma-root .md\:pb-0 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .vibe-figma-root .md\:text-lg {
+    @media (width >= 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .vibe-figma-root .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .vibe-figma-root .md\:opacity-0 {
+    @media (width >= 48rem) {
+      opacity: 0%;
+    }
+  }
+  .vibe-figma-root .md\:peer-data-\[variant\=inset\]\:m-2 {
+    @media (width >= 48rem) {
+      .vibe-figma-root &:is(:where(.peer)[data-variant="inset"] ~ *) {
+        margin: calc(var(--spacing) * 2);
+      }
+    }
+  }
+  .vibe-figma-root .md\:peer-data-\[variant\=inset\]\:ml-0 {
+    @media (width >= 48rem) {
+      .vibe-figma-root &:is(:where(.peer)[data-variant="inset"] ~ *) {
+        margin-left: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .vibe-figma-root .md\:peer-data-\[variant\=inset\]\:rounded-xl {
+    @media (width >= 48rem) {
+      .vibe-figma-root &:is(:where(.peer)[data-variant="inset"] ~ *) {
+        border-radius: var(--radius-xl);
+      }
+    }
+  }
+  .vibe-figma-root .md\:peer-data-\[variant\=inset\]\:shadow-sm {
+    @media (width >= 48rem) {
+      .vibe-figma-root &:is(:where(.peer)[data-variant="inset"] ~ *) {
+        --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+    }
+  }
+  .vibe-figma-root .md\:peer-data-\[variant\=inset\]\:peer-data-\[state\=collapsed\]\:ml-2 {
+    @media (width >= 48rem) {
+      .vibe-figma-root &:is(:where(.peer)[data-variant="inset"] ~ *) {
+        .vibe-figma-root &:is(:where(.peer)[data-state="collapsed"] ~ *) {
+          margin-left: calc(var(--spacing) * 2);
+        }
+      }
+    }
+  }
+  .vibe-figma-root .md\:after\:hidden {
+    @media (width >= 48rem) {
+      .vibe-figma-root &::after {
+        content: var(--tw-content);
+        display: none;
+      }
+    }
+  }
+  .vibe-figma-root .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .vibe-figma-root .lg\:col-span-3 {
+    @media (width >= 64rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
+  .vibe-figma-root .lg\:col-span-4 {
+    @media (width >= 64rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .vibe-figma-root .lg\:col-span-8 {
+    @media (width >= 64rem) {
+      grid-column: span 8 / span 8;
+    }
+  }
+  .vibe-figma-root .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
+  .vibe-figma-root .lg\:table-cell {
+    @media (width >= 64rem) {
+      display: table-cell;
+    }
+  }
+  .vibe-figma-root .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .vibe-figma-root .lg\:grid-cols-4 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .vibe-figma-root .lg\:grid-cols-12 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  .vibe-figma-root .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
+  .vibe-figma-root .lg\:items-start {
+    @media (width >= 64rem) {
+      align-items: flex-start;
+    }
+  }
+  .vibe-figma-root .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
+  .vibe-figma-root .\[\&_\.recharts-dot\[stroke\=\'\#fff\'\]\]\:stroke-transparent {
+    .vibe-figma-root & .recharts-dot[stroke='#fff'] {
+      stroke: transparent;
+    }
+  }
+  .vibe-figma-root .\[\&_\.recharts-layer\]\:outline-hidden {
+    .vibe-figma-root & .recharts-layer {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+  }
+  .vibe-figma-root .\[\&_\.recharts-sector\]\:outline-hidden {
+    .vibe-figma-root & .recharts-sector {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+  }
+  .vibe-figma-root .\[\&_\.recharts-sector\[stroke\=\'\#fff\'\]\]\:stroke-transparent {
+    .vibe-figma-root & .recharts-sector[stroke='#fff'] {
+      stroke: transparent;
+    }
+  }
+  .vibe-figma-root .\[\&_\.recharts-surface\]\:outline-hidden {
+    .vibe-figma-root & .recharts-surface {
+      --tw-outline-style: none;
+      outline-style: none;
+      @media (forced-colors: active) {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+      }
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group-heading\]\]\:px-2 {
+    .vibe-figma-root & [cmdk-group-heading] {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group-heading\]\]\:py-1\.5 {
+    .vibe-figma-root & [cmdk-group-heading] {
+      padding-block: calc(var(--spacing) * 1.5);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group-heading\]\]\:text-xs {
+    .vibe-figma-root & [cmdk-group-heading] {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group-heading\]\]\:font-medium {
+    .vibe-figma-root & [cmdk-group-heading] {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group\]\]\:px-2 {
+    .vibe-figma-root & [cmdk-group] {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-group\]\:not\(\[hidden\]\)_\~\[cmdk-group\]\]\:pt-0 {
+    .vibe-figma-root & [cmdk-group]:not([hidden]) ~[cmdk-group] {
+      padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-input-wrapper\]_svg\]\:h-5 {
+    .vibe-figma-root & [cmdk-input-wrapper] svg {
+      height: calc(var(--spacing) * 5);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-input-wrapper\]_svg\]\:w-5 {
+    .vibe-figma-root & [cmdk-input-wrapper] svg {
+      width: calc(var(--spacing) * 5);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-input\]\]\:h-12 {
+    .vibe-figma-root & [cmdk-input] {
+      height: calc(var(--spacing) * 12);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-item\]\]\:px-2 {
+    .vibe-figma-root & [cmdk-item] {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-item\]\]\:py-3 {
+    .vibe-figma-root & [cmdk-item] {
+      padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-item\]_svg\]\:h-5 {
+    .vibe-figma-root & [cmdk-item] svg {
+      height: calc(var(--spacing) * 5);
+    }
+  }
+  .vibe-figma-root .\[\&_\[cmdk-item\]_svg\]\:w-5 {
+    .vibe-figma-root & [cmdk-item] svg {
+      width: calc(var(--spacing) * 5);
+    }
+  }
+  .vibe-figma-root .\[\&_p\]\:leading-relaxed {
+    .vibe-figma-root & p {
+      --tw-leading: var(--leading-relaxed);
+      line-height: var(--leading-relaxed);
+    }
+  }
+  .vibe-figma-root .\[\&_svg\]\:pointer-events-none {
+    .vibe-figma-root & svg {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .\[\&_svg\]\:shrink-0 {
+    .vibe-figma-root & svg {
+      flex-shrink: 0;
+    }
+  }
+  .vibe-figma-root .\[\&_svg\:not\(\[class\*\=\'size-\'\]\)\]\:size-4 {
+    .vibe-figma-root & svg:not([class*='size-']) {
+      width: calc(var(--spacing) * 4);
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .vibe-figma-root .\[\&_tr\]\:border-b {
+    .vibe-figma-root & tr {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
+  .vibe-figma-root .\[\&_tr\:last-child\]\:border-0 {
+    .vibe-figma-root & tr:last-child {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+  }
+  .vibe-figma-root .\[\&\:has\(\>\.day-range-end\)\]\:rounded-r-md {
+    .vibe-figma-root &:has(>.day-range-end) {
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .\[\&\:has\(\>\.day-range-start\)\]\:rounded-l-md {
+    .vibe-figma-root &:has(>.day-range-start) {
+      border-top-left-radius: var(--radius-md);
+      border-bottom-left-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .\[\&\:has\(\[aria-selected\]\)\]\:rounded-md {
+    .vibe-figma-root &:has([aria-selected]) {
+      border-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .first\:\[\&\:has\(\[aria-selected\]\)\]\:rounded-l-md {
+    .vibe-figma-root &:first-child {
+      .vibe-figma-root &:has([aria-selected]) {
+        border-top-left-radius: var(--radius-md);
+        border-bottom-left-radius: var(--radius-md);
+      }
+    }
+  }
+  .vibe-figma-root .last\:\[\&\:has\(\[aria-selected\]\)\]\:rounded-r-md {
+    .vibe-figma-root &:last-child {
+      .vibe-figma-root &:has([aria-selected]) {
+        border-top-right-radius: var(--radius-md);
+        border-bottom-right-radius: var(--radius-md);
+      }
+    }
+  }
+  .vibe-figma-root .\[\&\:has\(\[aria-selected\]\.day-range-end\)\]\:rounded-r-md {
+    .vibe-figma-root &:has([aria-selected].day-range-end) {
+      border-top-right-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
+  }
+  .vibe-figma-root .\[\&\:has\(\[role\=checkbox\]\)\]\:pr-0 {
+    .vibe-figma-root &:has([role=checkbox]) {
+      padding-right: calc(var(--spacing) * 0);
+    }
+  }
+  .vibe-figma-root .\[\.border-b\]\:pb-6 {
+    .vibe-figma-root &:is(.border-b) {
+      padding-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .vibe-figma-root .\[\.border-t\]\:pt-6 {
+    .vibe-figma-root &:is(.border-t) {
+      padding-top: calc(var(--spacing) * 6);
+    }
+  }
+  .vibe-figma-root .\*\:\[span\]\:last\:flex {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &:is(span) {
+        .vibe-figma-root &:last-child {
+          display: flex;
+        }
+      }
+    }
+  }
+  .vibe-figma-root .\*\:\[span\]\:last\:items-center {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &:is(span) {
+        .vibe-figma-root &:last-child {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .vibe-figma-root .\*\:\[span\]\:last\:gap-2 {
+    .vibe-figma-root :is(& > *) {
+      .vibe-figma-root &:is(span) {
+        .vibe-figma-root &:last-child {
+          gap: calc(var(--spacing) * 2);
+        }
+      }
+    }
+  }
+  .vibe-figma-root .\[\&\:last-child\]\:pb-6 {
+    .vibe-figma-root &:last-child {
+      padding-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .vibe-figma-root .\[\&\>\[role\=checkbox\]\]\:translate-y-\[2px\] {
+    .vibe-figma-root &>[role=checkbox] {
+      --tw-translate-y: 2px;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .\[\&\>button\]\:hidden {
+    .vibe-figma-root &>button {
+      display: none;
+    }
+  }
+  .vibe-figma-root .\[\&\>span\:last-child\]\:truncate {
+    .vibe-figma-root &>span:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:pointer-events-none {
+    .vibe-figma-root &>svg {
+      pointer-events: none;
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:size-3 {
+    .vibe-figma-root &>svg {
+      width: calc(var(--spacing) * 3);
+      height: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:size-3\.5 {
+    .vibe-figma-root &>svg {
+      width: calc(var(--spacing) * 3.5);
+      height: calc(var(--spacing) * 3.5);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:size-4 {
+    .vibe-figma-root &>svg {
+      width: calc(var(--spacing) * 4);
+      height: calc(var(--spacing) * 4);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:h-2\.5 {
+    .vibe-figma-root &>svg {
+      height: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:h-3 {
+    .vibe-figma-root &>svg {
+      height: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:w-2\.5 {
+    .vibe-figma-root &>svg {
+      width: calc(var(--spacing) * 2.5);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:w-3 {
+    .vibe-figma-root &>svg {
+      width: calc(var(--spacing) * 3);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:shrink-0 {
+    .vibe-figma-root &>svg {
+      flex-shrink: 0;
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:translate-y-0\.5 {
+    .vibe-figma-root &>svg {
+      --tw-translate-y: calc(var(--spacing) * 0.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .vibe-figma-root .\[\&\>svg\]\:text-current {
+    .vibe-figma-root &>svg {
+      color: currentcolor;
+    }
+  }
+  .vibe-figma-root .\[\&\>tr\]\:last\:border-b-0 {
+    .vibe-figma-root &>tr {
+      .vibe-figma-root &:last-child {
+        border-bottom-style: var(--tw-border-style);
+        border-bottom-width: 0px;
+      }
+    }
+  }
+  .vibe-figma-root .\[\&\[data-panel-group-direction\=vertical\]\>div\]\:rotate-90 {
+    .vibe-figma-root &[data-panel-group-direction=vertical]>div {
+      rotate: 90deg;
+    }
+  }
+  .vibe-figma-root .\[\&\[data-state\=open\]\>svg\]\:rotate-180 {
+    .vibe-figma-root &[data-state=open]>svg {
+      rotate: 180deg;
+    }
+  }
+  .vibe-figma-root .\[\[data-side\=left\]\[data-collapsible\=offcanvas\]_\&\]\:-right-2 {
+    .vibe-figma-root [data-side=left][data-collapsible=offcanvas] & {
+      right: calc(var(--spacing) * -2);
+    }
+  }
+  .vibe-figma-root .\[\[data-side\=left\]\[data-state\=collapsed\]_\&\]\:cursor-e-resize {
+    .vibe-figma-root [data-side=left][data-state=collapsed] & {
+      cursor: e-resize;
+    }
+  }
+  .vibe-figma-root .\[\[data-side\=right\]\[data-collapsible\=offcanvas\]_\&\]\:-left-2 {
+    .vibe-figma-root [data-side=right][data-collapsible=offcanvas] & {
+      left: calc(var(--spacing) * -2);
+    }
+  }
+  .vibe-figma-root .\[\[data-side\=right\]\[data-state\=collapsed\]_\&\]\:cursor-w-resize {
+    .vibe-figma-root [data-side=right][data-state=collapsed] & {
+      cursor: w-resize;
+    }
+  }
+}
+@layer theme, base, components, utilities;
+@layer theme;
+@layer base {
+  .vibe-figma-root *, .vibe-figma-root ::after, .vibe-figma-root ::before, .vibe-figma-root ::backdrop, .vibe-figma-root ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  .vibe-figma-root, .vibe-figma-root {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  .vibe-figma-root hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  .vibe-figma-root abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  .vibe-figma-root h1, .vibe-figma-root h2, .vibe-figma-root h3, .vibe-figma-root h4, .vibe-figma-root h5, .vibe-figma-root h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  .vibe-figma-root a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  .vibe-figma-root b, .vibe-figma-root strong {
+    font-weight: bolder;
+  }
+  .vibe-figma-root code, .vibe-figma-root kbd, .vibe-figma-root samp, .vibe-figma-root pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  .vibe-figma-root small {
+    font-size: 80%;
+  }
+  .vibe-figma-root sub, .vibe-figma-root sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  .vibe-figma-root sub {
+    bottom: -0.25em;
+  }
+  .vibe-figma-root sup {
+    top: -0.5em;
+  }
+  .vibe-figma-root table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  .vibe-figma-root :-moz-focusring {
+    outline: auto;
+  }
+  .vibe-figma-root progress {
+    vertical-align: baseline;
+  }
+  .vibe-figma-root summary {
+    display: list-item;
+  }
+  .vibe-figma-root ol, .vibe-figma-root ul, .vibe-figma-root menu {
+    list-style: none;
+  }
+  .vibe-figma-root img, .vibe-figma-root svg, .vibe-figma-root video, .vibe-figma-root canvas, .vibe-figma-root audio, .vibe-figma-root iframe, .vibe-figma-root embed, .vibe-figma-root object {
+    display: block;
+    vertical-align: middle;
+  }
+  .vibe-figma-root img, .vibe-figma-root video {
+    max-width: 100%;
+    height: auto;
+  }
+  .vibe-figma-root button, .vibe-figma-root input, .vibe-figma-root select, .vibe-figma-root optgroup, .vibe-figma-root textarea, .vibe-figma-root ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  .vibe-figma-root :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  .vibe-figma-root :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  .vibe-figma-root ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  .vibe-figma-root ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    .vibe-figma-root ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  .vibe-figma-root textarea {
+    resize: vertical;
+  }
+  .vibe-figma-root ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  .vibe-figma-root ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  .vibe-figma-root ::-webkit-datetime-edit, .vibe-figma-root ::-webkit-datetime-edit-year-field, .vibe-figma-root ::-webkit-datetime-edit-month-field, .vibe-figma-root ::-webkit-datetime-edit-day-field, .vibe-figma-root ::-webkit-datetime-edit-hour-field, .vibe-figma-root ::-webkit-datetime-edit-minute-field, .vibe-figma-root ::-webkit-datetime-edit-second-field, .vibe-figma-root ::-webkit-datetime-edit-millisecond-field, .vibe-figma-root ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  .vibe-figma-root ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  .vibe-figma-root :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  .vibe-figma-root button, .vibe-figma-root input:where([type="button"], [type="reset"], [type="submit"]), .vibe-figma-root ::file-selector-button {
+    appearance: button;
+  }
+  .vibe-figma-root ::-webkit-inner-spin-button, .vibe-figma-root ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  .vibe-figma-root [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities;
+.vibe-figma-root {
+  --font-size: 16px;
+  --iplegal-base-font-size: 16px;
+  --iplegal-primary: #1F6FEB;
+  --iplegal-primary-hover: #1557BF;
+  --iplegal-primary-active: #0E4293;
+  --iplegal-accent: #3178C6;
+  --iplegal-gray-50: #F9FAFB;
+  --iplegal-gray-100: #F3F4F6;
+  --iplegal-gray-200: #E5E7EB;
+  --iplegal-gray-300: #D1D5DB;
+  --iplegal-gray-400: #9CA3AF;
+  --iplegal-gray-500: #6B7280;
+  --iplegal-gray-600: #4B5563;
+  --iplegal-gray-700: #374151;
+  --iplegal-gray-800: #1F2937;
+  --iplegal-gray-900: #111827;
+  --iplegal-success: #1D9C5A;
+  --iplegal-success-bg: #D1FAE5;
+  --iplegal-success-border: #6EE7B7;
+  --iplegal-warning: #F5A623;
+  --iplegal-warning-bg: #FEF3C7;
+  --iplegal-warning-border: #FCD34D;
+  --iplegal-danger: #D93025;
+  --iplegal-danger-bg: #FEE2E2;
+  --iplegal-danger-border: #FCA5A5;
+  --iplegal-info: #3178C6;
+  --iplegal-info-bg: #DBEAFE;
+  --iplegal-info-border: #93C5FD;
+  --iplegal-spacing-4: 4px;
+  --iplegal-spacing-8: 8px;
+  --iplegal-spacing-12: 12px;
+  --iplegal-spacing-16: 16px;
+  --iplegal-spacing-24: 24px;
+  --iplegal-spacing-32: 32px;
+  --iplegal-spacing-40: 40px;
+  --iplegal-spacing-48: 48px;
+  --iplegal-spacing-64: 64px;
+  --iplegal-breakpoint-xs: 0px;
+  --iplegal-breakpoint-sm: 768px;
+  --iplegal-breakpoint-md: 992px;
+  --iplegal-breakpoint-lg: 1200px;
+  --iplegal-container-sm: 750px;
+  --iplegal-container-md: 970px;
+  --iplegal-container-lg: 1170px;
+  --iplegal-radius: 4px;
+  --iplegal-radius-lg: 8px;
+  --iplegal-border: var(--iplegal-gray-300);
+  --iplegal-focus-ring: var(--iplegal-primary);
+  --iplegal-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --iplegal-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --iplegal-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --iplegal-font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --background: #ffffff;
+  --foreground: var(--iplegal-gray-900);
+  --primary: var(--iplegal-primary);
+  --primary-foreground: #ffffff;
+  --border: var(--iplegal-border);
+  --ring: var(--iplegal-focus-ring);
+  --radius: var(--iplegal-radius);
+}
+@layer base {
+  .vibe-figma-root * {
+    box-sizing: border-box;
+  }
+  .vibe-figma-root {
+    font-size: var(--iplegal-base-font-size);
+  }
+  .vibe-figma-root {
+    font-family: var(--iplegal-font-family);
+    background: #ffffff;
+    color: var(--iplegal-gray-900);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  .vibe-figma-root button:focus-visible, .vibe-figma-root input:focus-visible, .vibe-figma-root select:focus-visible, .vibe-figma-root textarea:focus-visible, .vibe-figma-root a:focus-visible {
+    outline: 2px solid var(--iplegal-focus-ring);
+    outline-offset: 2px;
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    .vibe-figma-root *, .vibe-figma-root ::before, .vibe-figma-root ::after, .vibe-figma-root ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-content: "";
+    }
+  }
+}
