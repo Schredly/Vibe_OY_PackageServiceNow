@@ -1,0 +1,13 @@
+{
+  "name": "vibe-overyonder-iplegal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@servicenow/sdk": "^4.4.0",
+    "@servicenow/sdk-core": "^4.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}
